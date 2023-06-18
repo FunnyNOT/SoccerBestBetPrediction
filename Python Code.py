@@ -18,7 +18,7 @@ from sklearn.tree import DecisionTreeClassifier
 #Filtraroume ta warnings gia na mhn emfanizontai kata thn ektelesh tou programmatos
 warnings.filterwarnings('ignore')
 #Syndeoume thn vash dedomenwn me to programma
-conn = sqlite3.connect(r"C:\Users\Leo\PycharmProjects\SoccerOdds\db.sqlite")
+conn = sqlite3.connect(r"C:\db.sqlite")
 
 #Vazoume se metavlites tou pinakes apo thn vash dedomenwn
 dataset = pd.read_sql_query("SELECT * from MatchDropped", conn)
